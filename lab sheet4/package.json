@@ -1,0 +1,12 @@
+{
+  "name": "btcs303p-as05-nodejs-lab4",
+  "version": "1.0.0",
+  "description": "COER University Full Stack Web Development Lab Sheet 4 - Node.js",
+  "main": "app1.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nanoid": "^3.3.11"
+  }
+}

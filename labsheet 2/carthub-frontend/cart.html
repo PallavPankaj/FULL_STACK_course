@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CartHub | Shopping Cart</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <div class="logo">
+
+            <span class="logo-icon">🛒</span>
+
+            <span>CartHub</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+                Cart
+                <span id="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="cart-section">
+
+            <h2>
+                Your Shopping Cart
+            </h2>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Product
+                        </th>
+
+                        <th>
+                            Quantity
+                        </th>
+
+                        <th>
+                            Price
+                        </th>
+
+                        <th>
+                            Subtotal
+                        </th>
+
+                        <th>
+                            Action
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="cart-container">
+
+                    <!-- JavaScript renders cart -->
+
+                </tbody>
+
+            </table>
+
+
+            <div class="cart-summary">
+
+                <h3>
+                    Grand Total:
+                    <span id="cart-total">₹0</span>
+                </h3>
+
+
+                <a href="checkout.html">
+                    Proceed to Checkout →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            CartHub — Shop Smart. Live Better.
+        </p>
+
+        <p>
+            Contact: support@carthub.com
+        </p>
+
+        <p>
+            &copy; 2026 CartHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

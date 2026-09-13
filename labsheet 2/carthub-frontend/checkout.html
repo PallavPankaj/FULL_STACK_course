@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CartHub | Checkout</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <div class="logo">
+
+            <span class="logo-icon">🛒</span>
+
+            <span>CartHub</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+                Cart
+                <span id="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="checkout-section">
+
+            <h2>
+                Complete Your Order
+            </h2>
+
+
+            <form id="checkout-form">
+
+
+                <!-- Name -->
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                >
+
+
+                <!-- Address -->
+
+                <label for="address">
+                    Address
+                </label>
+
+                <textarea
+                    id="address"
+                    name="address"
+                    rows="4"
+                    placeholder="Enter your complete address"
+                ></textarea>
+
+
+                <!-- City -->
+
+                <label for="city">
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Enter your city"
+                >
+
+
+                <!-- Pincode -->
+
+                <label for="pincode">
+                    Pincode
+                </label>
+
+                <input
+                    type="text"
+                    id="pincode"
+                    name="pincode"
+                    placeholder="Enter 6-digit pincode"
+                    maxlength="6"
+                >
+
+
+                <!-- Phone -->
+
+                <label for="phone">
+                    Phone
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter 10-digit phone number"
+                    maxlength="10"
+                >
+
+
+                <!-- Payment -->
+
+                <fieldset>
+
+                    <legend>
+                        Payment Method
+                    </legend>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="cod"
+                        >
+
+                        Cash on Delivery
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="upi"
+                        >
+
+                        UPI
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card"
+                        >
+
+                        Credit / Debit Card
+
+                    </label>
+
+                </fieldset>
+
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+
+                <div id="confirmation"></div>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            CartHub — Shop Smart. Live Better.
+        </p>
+
+        <p>
+            Contact: support@carthub.com
+        </p>
+
+        <p>
+            &copy; 2026 CartHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

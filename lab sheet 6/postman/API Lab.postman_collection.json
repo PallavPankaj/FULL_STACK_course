@@ -1,0 +1,11 @@
+{
+  "info":{"name":"API Lab","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable":[{"key":"baseUrl","value":"http://localhost:5000"},{"key":"apiKey","value":"api-lab-secret"}],
+  "item":[
+    {"name":"GET all tasks","request":{"method":"GET","url":"{{baseUrl}}/api/tasks"}},
+    {"name":"GET task by id","request":{"method":"GET","url":"{{baseUrl}}/api/tasks/1"}},
+    {"name":"POST task","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"},{"key":"x-api-key","value":"{{apiKey}}"}],"body":{"mode":"raw","raw":"{\n  \"title\": \"New Postman Task\",\n  \"completed\": false\n}"},"url":"{{baseUrl}}/api/tasks"}},
+    {"name":"PUT task","request":{"method":"PUT","header":[{"key":"Content-Type","value":"application/json"},{"key":"x-api-key","value":"{{apiKey}}"}],"body":{"mode":"raw","raw":"{\n  \"title\": \"Updated Task\",\n  \"completed\": true\n}"},"url":"{{baseUrl}}/api/tasks/1"}},
+    {"name":"DELETE task","request":{"method":"DELETE","header":[{"key":"x-api-key","value":"{{apiKey}}"}],"url":"{{baseUrl}}/api/tasks/5"}}
+  ]
+}
